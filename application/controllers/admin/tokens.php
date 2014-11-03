@@ -1373,7 +1373,7 @@ class tokens extends Survey_Common_Action
                     $aEmailaddresses = explode(';', $emrow['email']);
                     foreach ($aEmailaddresses as $sEmailaddress)
                     {
-                        $to[] = ($emrow['firstname'] . " " . $emrow['lastname'] . " <{$sEmailaddress}>");
+                        $to[] = ($emrow['lastname'] . " " . $emrow['firstname'] . " <{$sEmailaddress}>");
                     }
                     $fieldsarray["{EMAIL}"] = $emrow['email'];
                     $fieldsarray["{FIRSTNAME}"] = $emrow['firstname'];
